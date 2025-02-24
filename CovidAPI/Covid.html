@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="Covid.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>COVID-19 Data</h1>
+        <p id = "DataDisplay"></p>
+        <canvas id="myChart"></canvas>
+        <h3>
+            The chart above displays total Covid-19 cases globally over time
+        </h3>
+    </div>
+    <div class="Data">
+        <h1>COVID-19 Data by Country</h1>
+        <p id="CountryDataDisplay"></p>
+        
+        <form id="countryForm">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+            <p id = "Country">Country:</p>
+            <p id = "Cases">Cases:</p>
+            <p id = "Deaths">Deaths:</p>
+            <p id = "Recovered">Recovered:</p>
+            <p id = "Active">Active:</p>
+            <img id="flag" src="" >
+
+
+        
+        <h3>
+             Above displays inputed country data
+        </h3>
+    </div>
+    
+</body>
+<script src="Covid.js"></script>
+</html>
