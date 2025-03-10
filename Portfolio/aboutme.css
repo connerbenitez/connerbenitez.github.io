@@ -168,3 +168,32 @@ h2 {
 
 }
 }
+@media only screen and (max-width: 700px) {
+    .education,.experience {
+        width: 40%;
+        margin: auto;
+        padding: 20px;
+        border: 3px solid black;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* display: inline-block; */
+        margin-top: 30px;
+        padding: 20px;
+    
+    
+    }
+    
+    .education-experience-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+        padding: 20px;
+        max-width: 90%;
+        flex-direction: column;
+       
+    
+        border-radius: 10px;
+    
+    }
+    
+}
