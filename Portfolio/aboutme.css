@@ -13,7 +13,6 @@ body {
     align-items: center;
     background-color: #F8F0E3;
     padding: 15px 20px;
-
     flex-wrap: wrap;
 }
 
@@ -31,10 +30,8 @@ body {
 .navbar .socials ul li a img {
     width: 30px;
     height: 30px;
-
     mix-blend-mode: multiply;
     flex: 1 1 auto;
-
 }
 
 .navbar .socials ul li a img:hover {
@@ -57,10 +54,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     padding: 8px 12px;
-    
 }
-
-
 
 h1 {
     text-align: center;
@@ -80,26 +74,22 @@ h1 {
 
 .education,
 .experience {
-    width: 30%;
+    width: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
-
-
 }
 
 .education-experience-container {
     display: flex;
     justify-content: space-between;
     margin: 40px auto;
-    padding: 20px;
-    max-width: 60%;
-
+    padding: 50px;
+    max-width: 80%;
     border-radius: 10px;
-
 }
 
 h2 {
@@ -126,7 +116,6 @@ h2 {
     height: 75px;
     mix-blend-mode: multiply;
     flex: 1 1 auto;
-
 }
 
 .skills ul li img:hover {
@@ -134,13 +123,52 @@ h2 {
 }
 
 @media (max-width: 768px) {
-
     .navbar .socials ul li {
         display: none;
     }
 
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .navbar ul li {
         text-align: center;
-        margin: 0;
+        margin: 10px 0;
+    }
+
+    .bio,
+    .skills {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .education,
+    .experience {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .education-experience-container {
+        flex-direction: column;
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .skills ul li img {
+        width: 50px;
+        height: 50px;
     }
 }
