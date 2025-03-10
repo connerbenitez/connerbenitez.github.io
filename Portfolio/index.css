@@ -1,0 +1,142 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F0E3;
+    overflow-x: hidden
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F0E3;
+    padding: 20px 20px;
+    border: 1px solid transparent;
+    flex-wrap: wrap;
+}
+
+
+
+.navbar .socials ul li {
+    display: inline;
+    margin-left: 10%;
+    flex: 1 1 auto;
+
+}
+
+.navbar .socials ul li a img {
+    width: 30px;
+    height: 30px;
+    mix-blend-mode: multiply;
+    flex: 1 1 auto;
+    
+
+}
+.navbar .socials ul li a img:hover {
+    transform: scale(1.2);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 50px;
+    display: flex;
+
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+.learn-more {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.learn-more a {
+    color: white;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    background-color: #555;
+}
+
+.Home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    background-color: #F8F0E3;
+    padding-left: 300px;
+
+
+}
+
+.HomeText {
+
+    text-align: center;
+    font-size: larger;
+    color: #333;
+    padding-top: 100px;
+}
+
+.HomeImage {
+    display: flex;
+    margin: auto;
+    padding-left: 100px;
+    padding-top: 100px;
+    width: 50%;
+    height: 50%;
+    
+}
+
+
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .HomeImage {
+        display: flex;
+        margin: auto;
+        padding-left: 0;
+        padding-top: 20px;
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        
+      
+    }
+
+    .HomeText {
+        font-size: 1.2em;
+        padding-top: 100px;
+    }
+
+    .navbar .socials ul li {
+        display: none;
+    }
+    .navbar ul li{
+        text-align: center;
+        margin: 0;
+    }
+}
