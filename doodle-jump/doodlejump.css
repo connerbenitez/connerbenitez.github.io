@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: #87CEEB;
+    
+}
+
+#board {
+    background-color: green;
+    background-image: url("./doodlejumpbg.png");
+    border: 5px solid black;
+    max-width: 50%;
+    margin-top : 75px;
+    max-height: 600px;
+    border-radius: 12px;
+    
+    
+}
+#Score {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    
+    padding:0px;
+    border-radius: 12px;
+    margin-top: 10px;
+    
+}
+
+#HighScore {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    
+    padding:0px;
+    border-radius: 12px;
+    margin-top: 10px;
+    
+}
