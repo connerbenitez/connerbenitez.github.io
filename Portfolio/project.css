@@ -68,6 +68,7 @@ body {
 
 .Projects {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping to new lines */
     justify-content: space-between;
     align-items: flex-start;
     width: 95%;
@@ -75,13 +76,15 @@ body {
     padding-top: 20px;
 }
 
-.Projects> div {
+.Projects > div {
     border: 5px black solid;
     border-radius: 12px;
-    width: 32%;
+    width: 32%; /* 3 per row with some gap */
+    min-width: 300px; /* Optional: prevent too small cards on small screens */
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    margin-bottom: 20px; /* Add space between rows */
 }
 
 .Projects h2,
