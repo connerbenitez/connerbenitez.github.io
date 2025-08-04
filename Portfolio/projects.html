@@ -64,15 +64,15 @@
 
         <div id="Rainout">
             <h2>Automated Rainout Predictor Model</h2>
-            <div class="slideshow-container RainoutSlides">
+            <div class="slideshow-container rainoutSlides">
                 <div class="slide">
                     <img src="./images/Rainout1.png" style="width:100%; height: 200px;">
                 </div>
                 <div class="slide">
                     <img src="./images/Rainout2.png" style="width:100%; height: 200px;">
                 </div>
-                <a class="prev" onclick="changeSlide('moneyballSlides', -1)">&#10094;</a>
-                <a class="next" onclick="changeSlide('moneyballSlides', 1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide('rainoutSlides', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('rainoutSlides', 1)">&#10095;</a>
             </div>
             <h3>Details:</h3>
             <p>Automated a RandomForestClassifier model via AWS Lambda to predict liklihood of MILB Rainouts</p>
@@ -160,6 +160,7 @@
     <script>
         let slideIndexes = {
             moneyballSlides: 0,
+            rainoutSlides: 0,
             birdSlides: 0,
             calculatorSlides: 0
         };
@@ -186,6 +187,7 @@
 
         document.addEventListener("DOMContentLoaded", function () {
             showSlides("moneyballSlides");
+            showSlides("rainoutSlides");
             showSlides("birdSlides");
             showSlides("calculatorSlides");
         });
